@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Navbar /> 
         <Alert message="Please Complete React Course"/>
-        <div className='container'>
+        <div className='container  bgcolor rounded shadow-lg p-3 mb-5  rounded '>
         <Switch>
           <Route exact path="/">
             <Home />

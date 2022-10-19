@@ -1,7 +1,22 @@
+.body1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bgcolor{
+  background: linear-gradient(90deg, rgba(47,29,170,0.3592787456779587) 20%, rgba(0,212,255,1) 100%);
+}
+
 .App {
   text-align: center;
 }
 
+.addanote{
+  background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(64,65,60,0.8690826672465861) 90%);
+  color: whitesmoke;
+}
+.cardwidth{
+  background: #deeee1a6;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +28,12 @@
   }
 }
 
+.titleplaceholder{
+   background-color: #deeee1a6 ;
+}
+.submit{
+  cursor:pointer;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +57,27 @@
     transform: rotate(360deg);
   }
 }
+
+.titlebackground{
+  background-color: #282c34;
+  color: antiquewhite;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+
+}
+
+.card-align{
+  display: flex;
+  /* border: #282c34, 1px; */
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.flexbox-container{
+  display: flex;
+}
+
+
+
+

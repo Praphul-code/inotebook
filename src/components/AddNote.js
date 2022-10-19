@@ -14,22 +14,23 @@ export const AddNote = () => {
       setNote({...note, [e.target.name]: e.target.value})
     }
     return (
-        <div className='container'>
-            <h1>Add a note</h1>
+        <div className='container' >
+
+            <h1 className=' ratio ratio-21x9 text-center   rounded shadow-lg addanote'>Add A Note</h1>
             <form>
                 <div className="form-group mb-3">
-                    <label htmlFor="title">Title</label>
-                    <input type="text" className="form-control" id="title"  name="title" aria-describedby="emailHelp"  onChange={onChange} />
+                    <label htmlFor="title"><h3 >Title</h3></label>
+                    <input type="text" className="form-control titleplaceholder " id="title"  name="title" aria-describedby="emailHelp" placeholder='Enter Your Title...' onChange={onChange} />
                 </div>
                 <div className="form-group mb-3">
-                    <label htmlFor="description">Description</label>
-                    <input type="text" className="form-control" id="description" name="description" onChange={onChange} />
+                    <label htmlFor="description"><h3>Description</h3></label>
+                    <input type="text" className="form-control titleplaceholder" id="description" name="description" placeholder='Enter Your Description...' onChange={onChange} />
                 </div>
-                <div className="form-group form-check mb-3">
-                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                    <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
+                <div className="form-group mb-3">
+                    <label htmlFor="tag"><h3>Tag</h3></label>
+                    <input type="text" className="form-control titleplaceholder" id="tag" name="tag" placeholder='Enter Your Tag...' onChange={onChange} />
                 </div>
-                <button type="submit" className="btn btn-primary" onClick={handleClick}>Submit</button>
+                <button type="submit" className="btn btn-light submit titlebackground" onClick={handleClick}>Add Note</button>
             </form>
            
         </div>
