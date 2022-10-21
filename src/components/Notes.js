@@ -73,7 +73,7 @@ const Notes = () => {
                                     <label htmlFor="etag"><h3>Tag</h3></label>
                                     <input type="text" className="form-control titleplaceholder" id="etag" name="etag" value={note.etag} placeholder='Enter Your Tag...' onChange={onChange} minLength={5} required />
                                 </div>
-                                <button type="submit" className="btn btn-light submit titlebackground" onClick={handleClick}>Add Note</button>
+                              
                             </form>
                         </div>
                         <div className="modal-footer">
