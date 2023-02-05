@@ -21,11 +21,12 @@ const Login = (props) => {
     if (json.success) {
       // Save the auth token and redirect
       localStorage.setItem('token', json.authtoken);
+      props.showAlert("Logged In Successfully ", "success")
       history.push("/");
-
+     
     }
     else {
-      alert("Invalid credentials");
+      props.showAlert("Invalid Details", "danger")
     }
   }
 
@@ -48,13 +49,13 @@ const Login = (props) => {
   return (
     <div>
     <form className="Auth-form-content" onSubmit={handleSubmit}>
-      <h3 className="Auth-form-title">Sign In</h3>
+      <h3 className="Auth-form-title ratio ratio-21x9 text-center   rounded shadow-lg">Log In</h3>
       <div className="text-center">
 
 
       </div>
-      <div className="form-group mt-3">
-        <label htmlFor="email">Email address</label>
+      <div className="form-group mt-3  ">
+        <label htmlFor="email  ">Email address</label>
         <input
           type="email"
           className="form-control mt-1 titleplaceholder"
@@ -65,7 +66,7 @@ const Login = (props) => {
         />
       </div>
       <div className="form-group mt-3 ">
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password   ">Password</label>
         <input
           type="password"
           className="form-control mt-1 titleplaceholder"

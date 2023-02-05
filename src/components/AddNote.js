@@ -18,7 +18,7 @@ export const AddNote = () => {
     return (
         <div className='container' >
 
-            <h1 className=' ratio ratio-21x9 text-center   rounded shadow-lg addanote '>Add A Note</h1>
+            <h1 className=' ratio ratio-21x9 text-center   rounded shadow-lg Auth-form-title  '>Add A Note</h1>
             <form>
                 <div className="form-group mb-3">
                     <label htmlFor="title"><h3 >Title</h3></label>
